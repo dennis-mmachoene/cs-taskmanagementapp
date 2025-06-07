@@ -3,12 +3,11 @@ using Microsoft.AspNetCore.Identity;
 
 namespace TaskManagementApp.Entities
 {
-    public class User: IdentityUser
+    public class User : IdentityUser
     {
         [Required]
         [StringLength(50)]
         public string FirstName { get; set; } = string.Empty;
-
 
         [Required]
         [StringLength(50)]
@@ -23,5 +22,4 @@ namespace TaskManagementApp.Entities
 
         public string Fullname => $"{FirstName} {LastName}";
     }
-
 }

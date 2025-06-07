@@ -4,7 +4,7 @@ using TaskManagementApp.Entities;
 
 namespace TaskManagementApp.Data
 {
-    public class AppDbContext : IdentityDbContext
+    public class AppDbContext : IdentityDbContext<User>
     {
         public AppDbContext(DbContextOptions options)
             : base(options) { }
